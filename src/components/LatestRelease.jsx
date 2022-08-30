@@ -8,10 +8,10 @@ class LatestRelease extends Component {
     return (
       <Row className="md-4">
         {history.map((storia) => (
-          <Col xs={4}>
+          <Col key={storia.asin} xs={4}>
             <Card style={{ width: "100%", margin: "20px" }}>
-              <Card.Img variant="top" src={storia.img} />
-              <Card.Body>
+              <Card.Img  variant="top" src={storia.img} />
+              <Card.Body >
                 <Card.Title>{storia.title}</Card.Title>
               </Card.Body>
             </Card>
